@@ -15,6 +15,16 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Facebook stuff -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="container">
       <div class="page-header">
         <h1>
@@ -63,13 +73,18 @@
 
     <!-- footer -->
     <div class="container">
-      <div class="pull-left">
+      <div class="pull-right">
         <p class="text-muted">&copy; 2013 OpenLX LTD</p>
       </div>
 
-      <div class="pull-right">
+<!--       <div class="pull-right">
         <ul class="list-inline">
           <li><a href="http://pifacedigital.wordpress.com/">Blog</a></li>
+        </ul>
+      </div> -->
+
+      <div class="pull-left">
+        <ul class="list-unstyled">
           <!-- Twitter -->
           <li>
             <a href="https://twitter.com/raspberrypiface" class="twitter-follow-button" data-show-count="false">Follow @raspberrypiface</a>
@@ -78,14 +93,7 @@
 
           <!-- Facebook -->
           <li>
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=127760717416373";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="https://www.facebook.com/raspberryPiFace" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
           </li>
         </ul>
       </div>
